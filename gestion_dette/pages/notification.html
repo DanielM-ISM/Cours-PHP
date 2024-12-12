@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/notification.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="" alt="Logo">
+        </div>
+        <a href="/pages/dashboard.html" class="menu-item"><i class="fa-solid fa-gauge-high fa-xl"></i> Dashboard</a>
+        <a href="/pages/dettes.html" class="menu-item"><i class="fa-solid fa-dollar-sign fa-xl"></i> Dettes</a>
+        <a href="/pages/clients.html" class="menu-item"><i class="fa-solid fa-users fa-xl"></i> Clients</a>
+        <a href="/pages/articles.html" class="menu-item"><i class="fa-solid fa-box fa-xl"></i> Articles</a>
+        <a href="/pages/cumul.html" class="menu-item"><i class="fa-solid fa-box-archive"></i> Cumul</a>
+        <a href="/pages/notification.html" class="menu-item active"><i class="fa-solid fa-envelope fa-xl"></i> Notifications</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <input type="text" placeholder="Rechercher..." class="search-bar">
+            <div class="user-info" onclick="dropdown()">
+                <img src="" alt="" class="profile-icon">
+                <span>Khaliq KONE</span>
+                <div class="dropdown" id="userMenu">
+                    <img src="" alt="" class="profile-icon">
+                    <span>Khaliq KONE</span>
+                    <a href="#">MODIFIER</a>
+                    <a href="../connexion.html">DECONNEXION</a>
+                </div>
+            </div>
+        </header>
+        <section class="client-list">
+            <h2>Notifications</h2>
+            <div class="filter">
+                <select id="sortCriteria" onchange="sortTable()">
+                    <option value="montant">Montant</option>
+                    <option value="nom">Nom & Prénom</option>
+                    <option value="adresse">Adresse</option>
+                </select>
+            </div>
+    
+            <table id="clientTable">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Adresse</th>
+                        <th>Montant Due</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>SADJO</td>
+                        <td>Ousmane</td>
+                        <td>Kolobane</td>
+                        <td data-montant="15000">15000 FCFA</td>
+                        <td>
+                            <button class="annuler-btn">Annuler</button>
+                            <button class="send-btn">Envoyer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>FALL</td>
+                        <td>Al amin</td>
+                        <td>Mariste</td>
+                        <td data-montant="10000">10000 FCFA</td>
+                        <td>
+                            <button class="annuler-btn">Annuler</button>
+                            <button class="send-btn">Envoyer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>GUEYE</td>
+                        <td>Mame Khary</td>
+                        <td>Mermoz</td>
+                        <td data-montant="9000">9000 FCFA</td>
+                        <td>
+                            <button class="annuler-btn">Annuler</button>
+                            <button class="send-btn">Envoyer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>THIAM</td>
+                        <td>Mouhamet</td>
+                        <td>Niarry tally</td>
+                        <td data-montant="8000">8000 FCFA</td>
+                        <td>
+                            <button class="annuler-btn">Annuler</button>
+                            <button class="send-btn">Envoyer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>SY</td>
+                        <td>Oumou</td>
+                        <td>Guediawaye</td>
+                        <td data-montant="4000">4000 FCFA</td>
+                        <td>
+                            <button class="annuler-btn">Annuler</button>
+                            <button class="send-btn">Envoyer</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <td>SY</td>
+                        <td>Maimouna</td>
+                        <td>Pikine</td>
+                        <td data-montant="2500">2500 FCFA</td>
+                        <td>
+                            <button class="annuler-btn">Annuler</button>
+                            <button class="send-btn">Envoyer</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
+    <script src="/scripts/dashboard.js"></script>
+    <script src="/scripts/clients.js"></script>
+</body>
+</html>

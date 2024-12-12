@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/dettes.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="" alt="Logo">
+        </div>
+        <a href="/pages/dashboard.html" class="menu-item"><i class="fa-solid fa-gauge-high fa-xl"></i> Dashboard</a>
+        <a href="/pages/dettes.html" class="menu-item active"><i class="fa-solid fa-dollar-sign fa-xl"></i> Dettes</a>
+        <a href="/pages/clients.html" class="menu-item"><i class="fa-solid fa-users fa-xl"></i> Clients</a>
+        <a href="/pages/articles.html" class="menu-item"><i class="fa-solid fa-box fa-xl"></i> Articles</a>
+        <a href="/pages/cumul.html" class="menu-item"><i class="fa-solid fa-box-archive"></i> Cumul</a>
+        <a href="/pages/notification.html" class="menu-item"><i class="fa-solid fa-envelope fa-xl"></i> Notifications</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <input type="text" placeholder="Rechercher..." class="search-bar">
+            <div class="user-info" onclick="dropdown()">
+                <img src="" alt="" class="profile-icon">
+                <span>Khaliq KONE</span>
+                <div class="dropdown" id="userMenu">
+                    <img src="" alt="" class="profile-icon">
+                    <span>Khaliq KONE</span>
+                    <a href="#">MODIFIER</a>
+                    <a href="../connexion.html">DECONNEXION</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="debt-tracking-container">
+            <!-- Section Nouveau Client -->
+            <div class="new-client">
+                <h2><i class="fa-solid fa-user-plus"></i> Nouveau Client</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nom"><i class="fa-solid fa-user"></i> Nom</label>
+                        <input type="text" id="nom" name="nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom"><i class="fa-solid fa-user"></i> Prénom</label>
+                        <input type="text" id="prenom" name="prenom">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fa-solid fa-phone"></i> Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="adress"><i class="fa-solid fa-location-dot"></i> Adresse</label>
+                        <input type="text" id="adress" name="adress">
+                    </div>
+                    <div class="form-group">
+                        <label for="photo"><i class="fa-solid fa-camera"></i> Photo</label>
+                        <input type="file" id="photo" name="photo">
+                    </div>
+                </form>
+                <div class="account-option">
+                    <a href="#" onclick="toggleAccountFields()">Créer un compte?</a>
+                </div>
+                
+                <!-- Section de création de compte cachée par défaut -->
+                <div class="account-fields" id="accountFields" style="display: none;">
+                    <div class="form-group">
+                        <label for="username">Login</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                </div>
+                
+                <div class="form-buttons">
+                    <button type="button" class="cancel-btn"><i class="fa-solid fa-x"></i> Annuler</button>
+                    <button type="submit" class="save-btn"><i class="fa-solid fa-floppy-disk"></i> Enregistrer</button>
+                </div>
+            </div>
+
+            <!-- Section Suivi de Dette -->
+            <div class="debt-tracking">
+                <h2><i class="fa-solid fa-hand-holding-usd"></i> Suivi de Dette</h2>
+                <div class="debt-tracking-search">
+                    <label for="phone-search"><i class="fa-solid fa-phone"></i> Téléphone:</label>
+                    <input type="tel" id="phone-search" name="phone-search">
+                    <button type="button" class="search-btn">OK</button>
+                </div>
+                <div class="info-buttons">
+                    <button class="info-btn"><i class="fa-solid fa-user"></i> Infos</button>
+                    <button class="debt-btn"><i class="fa-solid fa-file-invoice-dollar"></i> Dettes</button>
+                    <button class="new-debt-btn"><i class="fa-solid fa-plus"></i> Nouvelle</button>
+                </div>
+                <div class="client-info">
+                    <div class="client-photo-placeholder">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="client-details">
+                        <div class="client-information">
+                            <div class="form-group">
+                                <label for="client-nom">Nom</label>
+                                <input type="text" id="client-nom" name="client-nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="client-prenom">Prénom</label>
+                                <input type="text" id="client-prenom" name="client-prenom">
+                            </div>
+                            <div class="form-group">
+                                <label for="client-adress">Adresse</label>
+                                <input type="text" id="client-adress" name="client-adress">
+                            </div>
+                        </div>
+                        <div class="qr-code-placeholder">
+                            <img src="path-to-your-qr-code.png" alt="QR Code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/dashboard.js"></script>
+    <script src="/scripts/dettes.js"></script>
+</body>
+</html>

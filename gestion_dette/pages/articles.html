@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/clients.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="" alt="Logo">
+        </div>
+        <a href="/pages/dashboard.html" class="menu-item"><i class="fa-solid fa-gauge-high fa-xl"></i> Dashboard</a>
+        <a href="/pages/dettes.html" class="menu-item"><i class="fa-solid fa-dollar-sign fa-xl"></i> Dettes</a>
+        <a href="/pages/clients.html" class="menu-item"><i class="fa-solid fa-users fa-xl"></i> Clients</a>
+        <a href="/pages/articles.html" class="menu-item active"><i class="fa-solid fa-box fa-xl"></i> Articles</a>
+        <a href="/pages/cumul.html" class="menu-item"><i class="fa-solid fa-box-archive"></i> Cumul</a>
+        <a href="/pages/notification.html" class="menu-item"><i class="fa-solid fa-envelope fa-xl"></i> Notifications</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <input type="text" placeholder="Rechercher..." class="search-bar">
+            <div class="user-info" onclick="dropdown()">
+                <img src="" alt="" class="profile-icon">
+                <span>Khaliq KONE</span>
+                <div class="dropdown" id="userMenu">
+                    <img src="" alt="" class="profile-icon">
+                    <span>Khaliq KONE</span>
+                    <a href="#">MODIFIER</a>
+                    <a href="../connexion.html">DECONNEXION</a>
+                </div>
+            </div>
+        </header>
+        <section class="client-list">
+            <h2>Articles</h2>
+            <div class="filter">
+                <select class="select-order" id="sortCriteria" onchange="sortTable()">
+                    <option value="nom">Nom</option>
+                    <option value="prix">Prix</option>
+                    <option value="quantite">Quantité</option>
+                </select>
+                <button class="new-client-btn">Nouveau article</button>
+            </div>
+    
+            <table id="clientTable">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Prix</th>
+                        <th>Quantité en Stock</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T-shirt</td>
+                        <td data-montant="7500">7500 FCFA</td>
+                        <td data-stock="346">346</td>
+                        <td>Marque: 6C Together We Can...</td>
+                    </tr>
+                    <tr>
+                        <td>Chemise</td>
+                        <td data-montant="11000">11000 FCFA</td>
+                        <td data-stock="231">231</td>
+                        <td>Marque: 6C Together We Can...</td>
+                    </tr>
+                    <tr>
+                        <td>Pantalon</td>
+                        <td data-montant="5000">5000 FCFA</td>
+                        <td data-stock="145">145</td>
+                        <td>Marque: 6C Together We Can...</td>
+                    </tr>
+                    <tr>
+                        <td>Chaussure</td>
+                        <td data-montant="28000">28000 FCFA</td>
+                        <td data-stock="76">76</td>
+                        <td>Marque: 6C Together We Can...</td>
+                    </tr>
+                    <tr>
+                        <td>Hoodie</td>
+                        <td data-montant="13500">13500 FCFA</td>
+                        <td data-stock="89">89</td>
+                        <td>Marque: 6C Together We Can...</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
+    <script src="/scripts/dashboard.js"></script>
+    <script src="/scripts/articles.js"></script>
+</body>
+</html>

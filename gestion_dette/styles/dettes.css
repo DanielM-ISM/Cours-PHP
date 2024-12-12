@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #F0F2F5;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #12273D;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu-item i {
+    text-align: center;
+    min-width: 50px;
+    margin-right: 10px;
+}
+
+.menu-item:hover {
+    color: #2BC8C5;
+}
+
+.menu-item.active {
+    background-color: #2BC8C5;
+}
+
+.content {
+    margin-left: 280px;
+    padding: 20px;
+    width: calc(100% - 280px);
+    overflow-y: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.search-bar {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-info span {
+    font-size: 16px;
+    margin-left: 10px;
+    color: #12273D;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 60px; 
+    z-index: 1000;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.dropdown img.profile-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.dropdown span {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #12273D;
+    margin-bottom: 15px;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #12273D;
+    text-decoration: none;
+    background-color: white;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.dropdown a:hover {
+    background-color: #2BC8C5; 
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.debt-tracking-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start; /* Align sections at the top */
+}
+
+.new-client, .debt-tracking {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-client h2, .debt-tracking h2 {
+    color: #2BC8C5;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.new-client .form-group, .debt-tracking .form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.new-client .form-group label,
+.debt-tracking .form-group label {
+    font-weight: bold;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.new-client .form-group input, 
+.debt-tracking .form-group input {
+    flex: 1;
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.account-option a {
+    color: #2BC8C5;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.account-fields {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.account-fields .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.account-fields .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.account-fields .form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cancel-btn {
+    background-color: #FF4B4B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn {
+    background-color: #2BC8C5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.debt-tracking-search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.debt-tracking-search label {
+    font-weight: bold;
+}
+
+.debt-tracking-search input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-btn {
+    background-color: #2BC8C5;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.info-buttons .info-btn,
+.debt-btn, .new-debt-btn {
+    background-color: #2BC8C5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.client-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    align-items: center; 
+}
+
+.client-photo-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+.client-info .client-details {
+    display: flex;
+    gap: 20px;
+}
+
+.client-information {
+    flex: 1;
+}
+
+.client-information .form-group input {
+    width: 100%;
+}
+
+.client-photo-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.qr-code-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+

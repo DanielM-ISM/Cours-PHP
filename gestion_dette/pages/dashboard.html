@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <a href="#" class="menu-item active"><i class="fa-solid fa-gauge-high fa-xl"></i> Dashboard</a>
+        <a href="/pages/dettes.html" class="menu-item"><i class="fa-solid fa-dollar-sign fa-xl"></i> Dettes</a>
+        <a href="/pages/clients.html" class="menu-item"><i class="fa-solid fa-users fa-xl"></i> Clients</a>
+        <a href="/pages/articles.html" class="menu-item"><i class="fa-solid fa-box fa-xl"></i> Articles</a>
+        <a href="/pages/cumul.html" class="menu-item"><i class="fa-solid fa-box-archive"></i>Cumul</a>
+        <a href="/pages/notification.html" class="menu-item"><i class="fa-solid fa-envelope fa-xl"></i> Notifications</a>
+    </div>
+
+    <div class="content">
+        <header>
+            <input type="text" placeholder="Rechercher..." class="search-bar">
+            <div class="user-info" onclick="dropdown()">
+                <img src="" alt="" class="profile-icon">
+                <span>Khaliq KONE</span>
+                <div class="dropdown" id="userMenu">
+                    <img src="" alt="" class="profile-icon">
+                    <span>Khaliq KONE</span>
+                    <a href="#">MODIFIER</a>
+                    <a href="../connexion.html">DECONNEXION</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="picon">
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <p>Total des <br>dettes</p>
+                </div>
+                <h2>1.000.000 FCFA</h2>
+                <p class="percentage"><i class="fa-solid fa-arrow-up"></i> 5.5% <span>since yesterday</span></p>
+            </div>
+            <div class="stat-card">
+                <div class="picon">
+                    <i class="fa-solid fa-users"></i>
+                    <p>Nombre de <br>Clients</p>
+                </div>
+                <h2>520</h2>
+                <p class="percentage"><i class="fa-solid fa-arrow-up"></i> 24% <span>since last month</span></p>
+            </div>
+            <div class="stat-card">
+                <div class="picon">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <p>Articles en <br>stock</p>
+                </div>
+                <h2>257</h2>
+                <p class="percentage" style="color: red;"><i class="fa-solid fa-arrow-down"></i> 3.4% <span>since last week</span></p>
+            </div>
+            <div class="stat-card">
+                <div class="picon">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <p>Demandes <br>en cours</p>
+                </div>
+                <h2>47</h2>
+                <p class="percentage"><i class="fa-solid fa-arrow-up"></i> 12% <span>since last Monday</span></p>
+            </div>
+        </div>
+
+        <div class="tables">
+            <div class="table">
+                <h3>Liste des Clients</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Téléphone</th>
+                            <th>Montant Dette</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>KONE</td><td>Khaliq</td><td>78 319 65 36</td><td>3000 FCFA</td></tr>
+                        <tr><td>BADJI</td><td>Fadel</td><td>78 520 04 18</td><td>1500 FCFA</td></tr>
+                        <tr><td>NDONG</td><td>Abdallah</td><td>76 302 26 29</td><td>8000 FCFA</td></tr>
+                        <tr><td>SY</td><td>Ahmad</td><td>76 764 91 20</td><td>2500 FCFA</td></tr>
+                    </tbody>
+                </table>
+                <a class="voir-plus" href="/pages/clients.html">Voir plus</a>
+            </div>
+            <div class="table">
+                <h3>Articles</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Article</th>
+                            <th>Quantité Restante</th>
+                            <th>Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>T-shirt</td><td>67</td><td>1500 FCFA</td></tr>
+                        <tr><td>Chemise</td><td>35</td><td>5000 FCFA</td></tr>
+                        <tr><td>Pantalon</td><td>134</td><td>6500 FCFA</td></tr>
+                        <tr><td>Chaussure</td><td>57</td><td>1500 FCFA</td></tr>
+                    </tbody>
+                </table>
+                <a class="voir-plus" href="/pages/articles.html">Voir plus</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts/dashboard.js"></script>
+</body>
+</html>
