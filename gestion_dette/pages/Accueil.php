@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion Boutique</title>
-    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/accueil.css">
 </head>
 <body>
     <div class="sidebar">
@@ -14,7 +14,7 @@
         </div>
         
         <div class="logo">
-            <img src="images/profile.jpg" alt="">
+            <img src="../images/profile.jpg" alt="">
         </div>
 
         <ul class="menu">
