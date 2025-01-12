@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Clients</title>
-    <link rel="stylesheet" href="../css/clients.css">
+    <link rel="stylesheet" href="../Public/accueil.css">
 </head>
 <body>
     <div class="sidebar">
@@ -18,22 +18,22 @@
 
         <ul class="menu">
             <button>
-                <li><a href="./Accueil.html">Accueuil</a></li>
+                <li><a href="./Accueil.php">Accueuil</a></li>
             </button>
             <button>
-                <li><a href="./Dettes.html">Dettes</a></li>
+                <li><a href="./Dettes.php">Dettes</a></li>
             </button>
             <button>
-                <li><a href="Clients.html">Clients</a></li>
+                <li><a href="Clients.php">Clients</a></li>
             </button>
             <button>
-                <li><a href="./Articles.html">Articles</a></li>
+                <li><a href="./Articles.php">Articles</a></li>
             </button>
             <button>
-                <li><a href="./Rapports.html">Rapports</a></li>
+                <li><a href="./Rapports.php">Rapports</a></li>
             </button>
             <button>
-                <li><a href="./Utilisateurs.html">Utilisateurs</a></li>
+                <li><a href="./Utilisateurs.php">Utilisateurs</a></li>
             </button>
         </ul>
     </div>

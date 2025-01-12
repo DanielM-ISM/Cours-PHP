@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des Articles</title>
-    <link rel="stylesheet" href="../css/aricles.css">
+    <link rel="stylesheet" href="../Public/accueil.css">
 </head>
 <body>
     <div class="sidebar">

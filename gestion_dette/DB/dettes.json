@@ -1,0 +1,18 @@
+[
+    {
+        "prenom": "Daniel",
+        "nom": "Smith",
+        "telephone": "781234567",
+        "adresse": "Dakar, S\u00e9n\u00e9gal",
+        "montant_du": 5000,
+        "photo": "..\/Public\/images\/uploads\/daniel.jpg"
+    },
+    {
+        "prenom": "AGOMA",
+        "nom": "Dauchhez",
+        "telephone": "170394999",
+        "adresse": "Ouakam",
+        "montant_du": "2000",
+        "photo": null
+    }
+]
