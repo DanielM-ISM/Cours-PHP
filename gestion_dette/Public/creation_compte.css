@@ -1,0 +1,162 @@
+/* Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    justify-content: center;
+    align-items: center;
+    color: #34495e;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    background-color: #2c3e50;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.left-panel .welcome-message h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.left-panel .welcome-message p {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Right Panel */
+.right-panel {
+    flex: 1;
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-panel h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.right-panel p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #7f8c8d;
+}
+
+/* Form Styling */
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #34495e;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #bdc3c7;
+}
+
+.btn {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.connect-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.connect-btn:hover {
+    background-color: #2980b9;
+}
+
+.client-space-btn {
+    background-color: #1abc9c;
+    color: white;
+}
+
+.client-space-btn:hover {
+    background-color: #16a085;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .left-panel {
+        padding: 20px;
+    }
+
+    .right-panel {
+        padding: 20px;
+    }
+}

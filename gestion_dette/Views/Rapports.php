@@ -13,7 +13,7 @@
         </div>
         
         <div class="logo">
-            <img src="images/profile.jpg" alt="Profile Image">
+            <img src="../Public/images/profile.jpg" alt="Photo de profil">
         </div>
 
         <ul class="menu">

@@ -29,7 +29,7 @@
                     <a href="#">Forgot password ?</a>
                     <a href="#">Exit</a>
                 </div>
-                <a href="/create-account.html" class="btn client-space-btn">Créer un compte ?</a>
+                <a href="./Creation_Compte.php" class="btn client-space-btn">Créer un compte ?</a>
             </form>
         </div>
     </div>

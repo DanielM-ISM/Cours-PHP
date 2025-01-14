@@ -6,5 +6,13 @@
     {
         "email": "user@example.com",
         "password": "userpass"
+    },
+    {
+        "email": "danielagoma492@gmail.com",
+        "password": "$2y$12$ze5pji2cJ82j5v5zh\/yLWuvWoIWsrKwn1XdifCMGNNenndQufgXJi"
+    },
+    {
+        "email": "dani@gmail.com",
+        "password": "123456"
     }
 ]

@@ -13,7 +13,7 @@
         </div>
         
         <div class="logo">
-            <img src="../images/profile.jpg" alt="Photo de profil">
+            <img src="../Public/images/profile.jpg" alt="Photo de profil">
         </div>
 
         <ul class="menu">
@@ -37,16 +37,13 @@
             </button>
         </ul>
     </div>
-
     <div class="main-content">
         <div class="header-bar">
             <h2>Gestion des Boutiques</h2>
         </div>
-
         <header>
             <input type="text" placeholder="Rechercher dans votre boutique..." class="search-bar">
         </header>
-        
         <section class="dette-list">
             <h1>Liste des Dettes</h1>
             <div class="filter">
@@ -54,7 +51,6 @@
                 <button>OK</button>
                 <button class="new-client">Nouveau Client</button>
             </div>
-
             <table>
                 <thead>
                     <tr>
@@ -68,15 +64,9 @@
                 </thead>
                 <tbody>
                     <?php
-                    // Chemin du fichier JSON des dettes
                     $dettes_file = '../DB/dettes.json';
-
-                    // Vérifier si le fichier existe
                     if (file_exists($dettes_file)) {
-                        // Charger les données depuis le fichier JSON
                         $dettes = json_decode(file_get_contents($dettes_file), true);
-
-                        // Vérifier si des dettes sont disponibles
                         if (!empty($dettes)) {
                             foreach ($dettes as $dette) {
                                 echo '<tr>';
@@ -89,11 +79,9 @@
                                 echo '</tr>';
                             }
                         } else {
-                            // Aucune dette enregistrée
                             echo '<tr><td colspan="6">Aucune dette enregistrée.</td></tr>';
                         }
                     } else {
-                        // Fichier JSON introuvable
                         echo '<tr><td colspan="6">Fichier dettes.json introuvable.</td></tr>';
                     }
                     ?>

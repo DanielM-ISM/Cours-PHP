@@ -12,7 +12,7 @@
             <span>Daniel</span>
         </div>
         <div class="logo">
-            <img src="../Public/images/profile.jpg" alt="">
+            <img src="../Public/images/profile.jpg" alt="Photo de profil">
         </div>
         <ul class="menu">
         <button>

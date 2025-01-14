@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Utilisateurs</title>
-    <link rel="stylesheet" href="../css/utilisateurs.css">
+    <link rel="stylesheet" href="../Public/accueil.css">
 </head>
 <body>
     <div class="sidebar">
@@ -13,9 +13,8 @@
         </div>
         
         <div class="logo">
-            <img src="images/profile.jpg" alt="Profile Image">
+            <img src="../Public/images/profile.jpg" alt="Photo de profil">
         </div>
-
         <ul class="menu">
             <button>
                 <li><a href="./Accueil.html">Accueil</a></li>
