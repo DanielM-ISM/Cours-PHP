@@ -14,5 +14,9 @@
     {
         "email": "dani@gmail.com",
         "password": "123456"
+    },
+    {
+        "email": "amadou@gmail.com",
+        "password": "12345678"
     }
 ]

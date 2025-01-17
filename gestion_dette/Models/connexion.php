@@ -8,7 +8,7 @@ function verifier_identifiants($email, $password) {
     if (is_array($users)) {
         foreach ($users as $user) {
             if ($user['email'] === $email && $user['password'] === $password) {
-                return $user; // Retourne les données de l'utilisateur.
+                return $user;
             }
         }
     }

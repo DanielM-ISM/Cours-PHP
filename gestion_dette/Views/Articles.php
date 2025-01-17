@@ -8,15 +8,12 @@
 </head>
 <body>
     <div class="sidebar">
-        
         <div class="user-profile">
             <span>Daniel</span>
         </div>
-        
         <div class="logo">
             <img src="../Public/images/profile.jpg" alt="Photo de profil">
         </div>
-
         <ul class="menu">
             <button>
                 <li><a href="./Accueil.html">Accueil</a></li>
